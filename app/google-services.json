@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "860516250036",
+    "firebase_url": "https://zodiac-1f9f2.firebaseio.com",
+    "project_id": "zodiac-1f9f2",
+    "storage_bucket": "zodiac-1f9f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860516250036:android:a0a3ccad4ee8b793",
+        "android_client_info": {
+          "package_name": "com.firstchat.chat.zodiac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860516250036-aqh8us7d3p3g2a7q0ckfb6f5h62nihr8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.firstchat.chat.zodiac",
+            "certificate_hash": "0c4dfd075f5bd7942c63729b08ebb9e912046386"
+          }
+        },
+        {
+          "client_id": "860516250036-fk6r7lnlgdst4kh76m0f5me49i16h5bt.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "860516250036-fk6r7lnlgdst4kh76m0f5me49i16h5bt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1h-d0DpXqqT8bZci0cFmS8O4-vVlc1I0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860516250036-fk6r7lnlgdst4kh76m0f5me49i16h5bt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

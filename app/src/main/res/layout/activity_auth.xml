@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="124dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/auth_phone_ID"
+            android:layout_width="338dp"
+            android:layout_height="58dp"
+            android:fontFamily="@font/product_sans"
+            android:hint="Enter Phone Number"
+            android:inputType="phone" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="192dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/auth_OTP_ID"
+            android:layout_width="338dp"
+            android:layout_height="54dp"
+            android:fontFamily="@font/product_sans"
+            android:hint="Code"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <include
+        android:id="@+id/auth_toolbaar"
+        layout="@layout/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/Verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="239dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Send Verification Code"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:id="@+id/auth_createAccount_TF_ID"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="69dp"
+        android:fontFamily="@font/product_sans"
+        android:text="Lets get Started"
+        android:textAlignment="viewStart"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="24sp"
+        android:typeface="serif" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp">
+
+    </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>

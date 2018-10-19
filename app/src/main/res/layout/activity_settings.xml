@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".SettingsActivity">
+
+    <include
+        android:id="@+id/settings_Appbar"
+        layout="@layout/app_bar_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_image_ID"
+        android:layout_width="139dp"
+        android:layout_height="142dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/contact_blue"
+        app:layout_constraintBottom_toTopOf="@+id/settings_status_ID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_Appbar" />
+
+    <Button
+        android:id="@+id/settings_changestatus_button_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/settings_status_ID"
+        android:layout_marginBottom="167dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="19dp"
+        android:backgroundTint="@color/Teal"
+        android:fontFamily="@font/product_sans"
+        android:text="Change Status"
+        android:textAllCaps="false"
+        android:textColor="@color/color2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_status_ID" />
+
+    <Button
+        android:id="@+id/settings_changeDP_Btn_ID"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/settings_image_ID"
+        android:layout_alignStart="@+id/settings_displayname_ID"
+        android:layout_marginBottom="84dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/Teal"
+        android:fontFamily="@font/product_sans"
+        android:text="@string/change_display_picture"
+        android:textColor="@color/color2"
+        app:layout_constraintBottom_toTopOf="@+id/settings_status_ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/settings_image_ID"
+        app:layout_constraintTop_toBottomOf="@+id/settings_displayname_ID"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/settings_status_ID"
+        android:layout_width="319dp"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/settings_image_ID"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/text_bg"
+        android:fontFamily="@font/product_sans"
+        android:paddingLeft="2.5dp"
+        android:text="Your Status"
+        android:textAlignment="viewStart"
+        android:textColor="@color/Teal"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/settings_changestatus_button_ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_image_ID" />
+
+    <TextView
+        android:id="@+id/settings_displayname_ID"
+        android:layout_width="173dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/settings_image_ID"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/product_sans"
+        android:paddingLeft="0dp"
+        android:text="display name"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/settings_image_ID"
+        app:layout_constraintTop_toBottomOf="@+id/settings_Appbar" />
+
+</android.support.constraint.ConstraintLayout>
