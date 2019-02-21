@@ -31,6 +31,7 @@ import java.util.concurrent.TimeUnit;
 
 public class AuthActivity extends AppCompatActivity {
     //initisiliation
+    //test2
   private LinearLayout otplayput;
     private LinearLayout phonelayout;
     private EditText phonetext;
